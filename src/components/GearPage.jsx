@@ -80,30 +80,19 @@ function GearPage({ language }) {
         <Button
           onClick={getRandomGear} // 장비를 다시 선택하는 함수
           className="btn"
-          style={{
-            backgroundColor: "#fff1e6", // 배경색
-            color: "#cc6b2d", // 글자색
-            border: "none", // 테두리 없애기
-            boxShadow: "none", // 그림자 없애기
-          }}
+          variant="btn btn-outline-success"
         >
           {language === "ko" ? "다시..." : "もう一度..."}
         </Button>
 
         {/* 메인 페이지로 이동하는 버튼 */}
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <Button
-            className="btn"
-            style={{
-              backgroundColor: "#fff1e6", // 배경색
-              color: "#cc6b2d", // 글자색
-              border: "none", // 테두리 없애기
-              boxShadow: "none", // 그림자 없애기
-            }}
-          >
-            {language === "ko" ? "🏠" : "🏠"}
-          </Button>
-        </Link>
+                  <Link to="/" style={{ textDecoration: "none" }}>
+                    <Button
+                      variant="btn btn-light"
+                    >
+                      {language === "ko" ? "🏠" : "🏠"}
+                    </Button>
+                  </Link>
       </div>
 
       {/* 푸터 위에 여백 추가 */}

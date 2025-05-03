@@ -77,12 +77,7 @@ function WeaponPage({ language }) {
           <Button
             onClick={getRandomWeapons}
             className="btn"
-            style={{
-              backgroundColor: "#d5f3f9", // 배경색
-              color: "#005f6b", // 글자색
-              border: "none", // 테두리 없애기
-              boxShadow: "none", // 그림자 없애기 (선택 사항)
-            }}
+            variant="btn btn-outline-success"
           >
             {language === "ko" ? "입니다!" : "です！"}
           </Button>
@@ -121,34 +116,23 @@ function WeaponPage({ language }) {
 
       {/* "다시..." 버튼과 "메인으로" 버튼을 무기 결과 아래에 위치시키고 색상 변경 */}
       {hasSelectedWeapons && (
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 d-flex justify-content-center gap-3">
           <Button
             onClick={handleResetWeapons} // "다시..." 버튼 클릭 시 기존 인원 수로 다시 뽑기
-            className="btn me-3"
-            style={{
-              backgroundColor: "#d5f3f9", // 배경색 동일하게 변경
-              color: "#005f6b", // 글자색 동일하게 변경
-              border: "none", // 테두리 없애기
-              boxShadow: "none", // 그림자 없애기 (선택 사항)
-            }}
+            variant="btn btn-outline-success"
           >
             {language === "ko" ? "다시..." : "もう一度..."}
           </Button>
 
           {/* 메인 페이지로 돌아가는 버튼 추가 */}
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <Button
-              className="btn"
-              style={{
-                backgroundColor: "#d5f3f9", // 배경색 동일하게 변경
-                color: "#005f6b", // 글자색 동일하게 변경
-                border: "none", // 테두리 없애기
-                boxShadow: "none", // 그림자 없애기 (선택 사항)
-              }}
-            >
-              {language === "ko" ? "🏠" : "🏠"}
-            </Button>
-          </Link>
+          {/* 메인 페이지로 이동하는 버튼 */}
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                      <Button
+                        variant="btn btn-light"
+                      >
+                        {language === "ko" ? "🏠" : "🏠"}
+                      </Button>
+                    </Link>
         </div>
       )}
 

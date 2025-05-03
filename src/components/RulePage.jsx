@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-function RulePage({ language }) {
+function RulePage({ language, toggleLanguage }) {
   const [showRules, setShowRules] = useState(true); // 룰을 보여줄지 여부를 상태로 관리
   const [randomRule, setRandomRule] = useState(""); // 랜덤으로 선택된 룰을 저장하는 상태
 
@@ -81,13 +81,7 @@ function RulePage({ language }) {
         <div className="text-center mb-4 d-flex justify-content-center gap-3">
           <Button
             onClick={handleShowRules} // 룰을 다시 보여주는 함수
-            className="btn"
-            style={{
-              backgroundColor: "#ffebeb", // 배경색: 룰 박스 색상
-              color: "#c13c3c", // 글자색: 룰 박스 글자색
-              border: "none", // 테두리 없애기
-              boxShadow: "none", // 그림자 없애기
-            }}
+            variant="btn btn-outline-success"
           >
             {language === "ko" ? "다시..." : "もう一度..."}
           </Button>
@@ -95,13 +89,7 @@ function RulePage({ language }) {
           {/* 메인 페이지로 이동하는 버튼 */}
           <Link to="/" style={{ textDecoration: "none" }}>
             <Button
-              className="btn"
-              style={{
-                backgroundColor: "#ffebeb", // 배경색: 룰 박스 색상
-                color: "#c13c3c", // 글자색: 룰 박스 글자색
-                border: "none", // 테두리 없애기
-                boxShadow: "none", // 그림자 없애기
-              }}
+              variant="btn btn-light"
             >
               {language === "ko" ? "🏠" : "🏠"}
             </Button>
