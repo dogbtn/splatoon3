@@ -58,7 +58,7 @@ function WeaponPage({ language }) {
       {/* 플레이어 수 선택, 텍스트, 버튼을 한 줄로 배치 */}
       {!hasSelectedWeapons && (
         <div className="d-flex justify-content-center mb-4 align-items-center">
-          <Form.Label className="me-3 mb-0">{language === "ko" ? "플레이어 수" : "プレイヤー数"}</Form.Label>
+          <Form.Label className="me-3 mb-0">{language === "ko" ? "플레이어는" : "プレイヤーは"}</Form.Label>
           <Form.Group controlId="numPlayers" className="me-3 mb-0">
             <Form.Control
               as="select"
