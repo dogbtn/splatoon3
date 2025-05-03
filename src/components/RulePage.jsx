@@ -35,7 +35,7 @@ function RulePage({ language, toggleLanguage }) {
     <div className="container mt-5">
       {/* 룰 선택 상자: 가운데 정렬 */}
       <div className="row text-center mb-4">
-        <div className="col-12 col-md-4 mb-4 mx-auto">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/" className="text-decoration-none">
             <div
               className="card shadow-sm border-light rounded"

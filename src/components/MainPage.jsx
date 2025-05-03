@@ -21,13 +21,14 @@ const MainPage = ({ language }) => {
 
       <div className="row text-center">
         {/* 첫 번째 박스: 무기 선택 */}
-        <div className="col-12 col-md-4 mb-4">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/weapon" className="text-decoration-none">
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded" // border-light 제거
               style={{
                 backgroundColor: "#d5f3f9", // 배경색
                 color: "#005f6b", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center">
@@ -45,13 +46,14 @@ const MainPage = ({ language }) => {
         </div>
 
         {/* 두 번째 박스: 룰 선택 */}
-        <div className="col-12 col-md-4 mb-4">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/rule" className="text-decoration-none">
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded" // border-light 제거
               style={{
                 backgroundColor: "#ffebeb", // 배경색
                 color: "#c13c3c", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center">
@@ -69,13 +71,14 @@ const MainPage = ({ language }) => {
         </div>
 
         {/* 세 번째 박스: 기어 파워 선택 */}
-        <div className="col-12 col-md-4 mb-4">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/gear" className="text-decoration-none">
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded" // border-light 제거
               style={{
                 backgroundColor: "#fff1e6", // 배경색
                 color: "#cc6b2d", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center">

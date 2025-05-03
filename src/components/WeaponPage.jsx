@@ -31,13 +31,14 @@ function WeaponPage({ language }) {
     <div className="container mt-5">
       {/* 첫 번째 박스: 무기 선택, 가운데 정렬 */}
       <div className="row text-center mb-5">
-        <div className="col-12 col-md-4 mx-auto">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/" className="text-decoration-none"> {/* 카드 클릭 시 메인 페이지로 이동 */}
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded" // border-light 제거, border:none 추가
               style={{
                 backgroundColor: "#d5f3f9", // 배경색
                 color: "#005f6b", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center justify-content-center">

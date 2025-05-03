@@ -38,20 +38,21 @@ function GearPage({ language }) {
     <div className="container mt-5">
       {/* 기어 파워 상자를 가운데로 정렬하고, 클릭 시 메인으로 이동 */}
       <div className="row text-center mb-4">
-        <div className="col-12 col-md-4 mb-4 mx-auto">
+        <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/" className="text-decoration-none">
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded" // border-light 제거, border:none 추가
               style={{
                 backgroundColor: "#fff1e6", // 배경색
                 color: "#cc6b2d", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center justify-content-center">
                 <img
                   src="/images/IconNPCVendor.png" // 이미지 URL
                   className="me-3"
-                  alt="기어 파워 선택"
+                  alt="-"
                   style={{ width: "50px", height: "50px", objectFit: "contain" }}
                 />
                 <h2 className="card-text">{language === "ko" ? "기어 파워" : "ギアパワー"}</h2>
