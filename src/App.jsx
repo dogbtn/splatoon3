@@ -5,6 +5,9 @@ import WeaponPage from "./components/WeaponPage";
 import RulePage from "./components/RulePage";
 import GearPage from "./components/GearPage";
 import Footer from "./components/Footer"; // 푸터 추가
+// App.js 상단에 CSS 파일 import 추가
+import './App.css';
+
 
 function App() {
   const [language, setLanguage] = useState("ko"); // "ko" or "ja"
