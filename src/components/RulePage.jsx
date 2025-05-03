@@ -38,10 +38,11 @@ function RulePage({ language, toggleLanguage }) {
         <div className="col-12 col-sm-6 col-md-4 mb-4 mx-auto px-3">
           <Link to="/" className="text-decoration-none">
             <div
-              className="card shadow-sm border-light rounded"
+              className="card shadow-sm rounded"
               style={{
                 backgroundColor: "#ffebeb", // 배경색
                 color: "#c13c3c", // 글자색
+                border: "none", // 테두리 없애기
               }}
             >
               <div className="card-body d-flex align-items-center justify-content-center">
