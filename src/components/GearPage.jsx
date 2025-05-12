@@ -81,7 +81,7 @@ function GearPage({ language }) {
         <Button
           onClick={getRandomGear} // 장비를 다시 선택하는 함수
           className="btn"
-          variant="btn btn-outline-success"
+          variant="btn btn-secondary"
         >
           {language === "ko" ? "다시..." : "もう一度..."}
         </Button>
@@ -89,9 +89,9 @@ function GearPage({ language }) {
         {/* 메인 페이지로 이동하는 버튼 */}
                   <Link to="/" style={{ textDecoration: "none" }}>
                     <Button
-                      variant="btn btn-light"
+                      variant="btn btn-outline-secondary"
                     >
-                      {language === "ko" ? "🏠" : "🏠"}
+                      {language === "ko" ? "홈으로" : "ホームへ"}
                     </Button>
                   </Link>
       </div>
