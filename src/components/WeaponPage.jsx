@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"; // Link import 추가
 
 function WeaponPage({ language }) {
   const [selectedWeapons, setSelectedWeapons] = useState([]);
-  const [numPlayers, setNumPlayers] = useState(8); // 기본적으로 8명을 선택
+  const [numPlayers, setNumPlayers] = useState(1); // 기본적으로 8명을 선택
   const [hasSelectedWeapons, setHasSelectedWeapons] = useState(false); // 무기 선택 여부를 관리
 
   const handlePlayerChange = (event) => {
